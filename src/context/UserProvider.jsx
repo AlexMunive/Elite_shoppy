@@ -1,12 +1,13 @@
+import React, { useEffect, useState } from "react";
+import { createContext } from "react";
+
+// importaciones de firebase
 import {
     createUserWithEmailAndPassword,
     onAuthStateChanged,
     signInWithEmailAndPassword,
     signOut,
 } from "firebase/auth";
-import React, { useEffect, useState } from "react";
-// Podemos mandar a llamar fuera de un componente
-import { createContext } from "react";
 import { auth } from "../config/firebase";
 
 export const UserContext = createContext();
