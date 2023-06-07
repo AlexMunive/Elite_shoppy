@@ -3,12 +3,12 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDR3EoswTG9KqN-5RTtygkWzO3OayJjUGQ",
-  authDomain: "eliteshoppy-cb211.firebaseapp.com",
-  projectId: "eliteshoppy-cb211",
-  storageBucket: "eliteshoppy-cb211.appspot.com",
-  messagingSenderId: "5865985209",
-  appId: "1:5865985209:web:3e4c0ce4970d8a41ab7768"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // iniciar firebase
