@@ -7,7 +7,7 @@ import {
 import React, { useEffect, useState } from "react";
 // Podemos mandar a llamar fuera de un componente
 import { createContext } from "react";
-import { auth } from "../firebase";
+import { auth } from "../config/firebase";
 
 export const UserContext = createContext();
 
