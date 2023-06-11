@@ -12,6 +12,7 @@ import Blog from "./routes/Blog";
 import Mail from "./routes/Mail";
 import LayoutContainer from "./layout/LayoutContainer";
 import ItemDetailContainer from "./components/mainProducts/ItemDetailContainer";
+import NotFound from "./layout/NotFound";
 
 const App = () => {
     const { user } = useContext(UserContext);
@@ -46,6 +47,7 @@ const App = () => {
                 </Route>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/register" element={<Register />}></Route>
+                <Route path="*" element={<NotFound />}></Route>
             </Routes>
         </>
     );

@@ -6,7 +6,7 @@ const Navbar = () => {
 
     let Links = [
         { name: "HOME", link: "/" },
-        { name: "PRODUCTS", link: "/products" },
+        { name: "PRODUCTOS", link: "/products" },
         { name: "ABOUT US", link: "/about" },
         { name: "BLOG'S", link: "/blog" },
         { name: "MAIL US", link: "/mail" },
@@ -32,7 +32,7 @@ const Navbar = () => {
                     {Links.map((link) => (
                         <li
                             key={link.name}
-                            className="md:my-0 md:ml-8 md:text-lg my-4 font-roboto text-sm font-light "
+                            className="md:my-0 md:ml-8 md:text-lg my-4 font-roboto text-sm font-light focus:text-[#ff9b05]"
                         >
                             <NavLink
                                 to={link.link}
