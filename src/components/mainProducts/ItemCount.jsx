@@ -44,7 +44,7 @@ const ItemCount = ({ initial, onAdd }) => {
         <div>
             <div className="flex items-center content-center  border-[#ff9b05] ">
                 <button
-                    disabled={count <= 0}
+                    disabled={count <= initial}
                     onClick={handleClickDisminur}
                     className="bg-[#ff9b05] text-white px-4 text-center pb-[2px]"
                 >
