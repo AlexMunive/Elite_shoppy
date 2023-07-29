@@ -12,7 +12,7 @@ const Discount = () => {
                 Discount
             </h2>
             <p className="absolute ml-[250px] mt-[80px] font-cantarell text-xs font-extralight text-[#ff9b05] hover:text-black sm:ml-[450px] sm:mt-[140px] sm:text-xl">
-                SHOP NOW <i className="fa-solid fa-arrow-right"></i>
+                SHOP NOW <ion-icon name="arrow-forward-outline"></ion-icon>
             </p>
             <img src={discountLogo} alt="" className=" h-full w-[760px]" />
         </div>
