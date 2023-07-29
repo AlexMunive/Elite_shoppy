@@ -12,7 +12,7 @@ function classNames(...classes) {
 const Mujer = () => {
     return (
         <Menu as="div" className="relative inline-block text-left">
-            <div>
+            <div className="ml-12 mb-5 md:ml-0 md:mb-0">
                 <Menu.Button className="inline-flex w-full  gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
                     Mujeres
                     {/* <ChevronDownIcon

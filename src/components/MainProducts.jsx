@@ -9,7 +9,7 @@ const MainProducts = () => {
     return (
         <div>
             <MainImage />
-            <div className="flex my-10">
+            <div className="flex my-10 flex-col md:flex-row">
                 <ListCategory />
                 <ItemListContainer />
             </div>

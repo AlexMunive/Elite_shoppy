@@ -13,10 +13,10 @@ const CartWidget = () => {
         <div className="cursor-pointer">
             <NavLink
                 to="/cart"
-                className='className="mr-5 cursor-pointer text-[#ff9b05] text-3xl mr-5'
+                className=" cursor-pointer text-[#ff9b05] text-3xl mr-5 bg-transparent"
             >
                 <ion-icon name="cart-outline"></ion-icon>
-                <span>{totalProducts() || ""}</span>
+                <span className="text-xl">{totalProducts() || ""}</span>
             </NavLink>
         </div>
     );

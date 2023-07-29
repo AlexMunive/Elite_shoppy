@@ -13,11 +13,17 @@ import Mail from "./routes/Mail";
 import LayoutContainer from "./layout/LayoutContainer";
 import ItemDetailContainer from "./components/mainProducts/ItemDetailContainer";
 import NotFound from "./layout/NotFound";
+import Checkout from "./components/Checkout/Checkout";
 
 const App = () => {
     const { user } = useContext(UserContext);
     if (user === false) {
-        return <p>loading...</p>;
+        return (
+            <div class="flex flex-col items-center justify-center min-h-screen bg-gray-200">
+                <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-[#ff9b05] border-solid mb-4"></div>
+                <h1 class="text-gray-800 text-xl font-semibold">Cargando...</h1>
+            </div>
+        );
     }
     return (
         <>
@@ -44,6 +50,7 @@ const App = () => {
                             </RequiredAuth>
                         }
                     ></Route>
+                    <Route path="/checkout" element={<Checkout />}></Route>
                 </Route>
                 <Route path="/login" element={<Login />}></Route>
                 <Route path="/register" element={<Register />}></Route>
